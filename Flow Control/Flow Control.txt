@@ -1,0 +1,302 @@
+Started on 03_07_2021 (copied notes from OneNote)
+-----------------
+
+Python 3.9.1 (tags/v3.9.1:1e5d33e, Dec  7 2020, 17:08:21) [MSC v.1927 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+>>> 
+= RESTART: C:/Users/tcailleau/Documents/Python/AtBSwPython/Python Basics/HelloWorld.py
+Hello World!
+What is your name?: 
+Thierry
+Nice meeting you, Thierry
+The length of you name is: 
+7
+characters.
+And what's your age?: 
+44
+You will be 45 in a year from now!
+>>> python3 C:/Users/tcailleau/Documents/Python/AtBSwPython/Python Basics/HelloWorld.py
+SyntaxError: invalid syntax
+>>> str(26)
+'26'
+>>> int('1234')
+1234
+>>> float('3.14')
+3.14
+>>> float('3')
+3.0
+>>> clear
+Traceback (most recent call last):
+  File "<pyshell#5>", line 1, in <module>
+    clear
+NameError: name 'clear' is not defined
+>>> clear()
+Traceback (most recent call last):
+  File "<pyshell#6>", line 1, in <module>
+    clear()
+NameError: name 'clear' is not defined
+>>> cls
+Traceback (most recent call last):
+  File "<pyshell#7>", line 1, in <module>
+    cls
+NameError: name 'cls' is not defined
+>>> True
+True
+>>> False
+False
+>>> 42 == 42
+True
+>>> 42 == 'Hello'
+False
+>>> 2 != 3
+True
+>>> 42 < 100
+True
+>>> 42 < 42
+False
+>>> 43 <= 42
+False
+>>> 42 <= 42
+True
+>>> 
+
+
+
+
+
+#demonstrating the if statement
+name = 'Alice'
+if name == 'Alice':
+    print('Hi Alice')
+print('Done')
+
+
+= RESTART: C:/Users/tcailleau/Documents/Python/AtBSwPython/Flow Control/if_example.py
+Hi Alice
+Done
+>>> 
+
+
+#demonstrating the if statement
+name = 'Bob'
+if name == 'Alice':
+    print('Hi Alice')
+print('Done')
+
+= RESTART: C:/Users/tcailleau/Documents/Python/AtBSwPython/Flow Control/if_example.py
+Done
+>>> 
+
+password = 'swordfish'
+if password == 'swordfish':
+    print('Access granted!')
+else:
+    print('Wrong password :-(')
+
+= RESTART: C:/Users/tcailleau/Documents/Python/AtBSwPython/Flow Control/if_else_example.py
+Access granted!
+>>> 
+
+
+password = 'swordfish'
+if password == 'swordfish1':
+    print('Access granted!')
+else:
+    print('Wrong password :-(')
+
+= RESTART: C:/Users/tcailleau/Documents/Python/AtBSwPython/Flow Control/if_else_example.py
+Wrong password :-(
+>>> 
+
+
+ 
+
+
+
+Thank you for entering something!
+>>> 
+= RESTART: C:/Users/tcailleau/Documents/Python/AtBSwPython/Flow Control/if_non_null_example.py
+Please enter a name:
+Thierry
+Thank you for entering something!
+>>> 
+= RESTART: C:/Users/tcailleau/Documents/Python/AtBSwPython/Flow Control/if_non_null_proper_example.py
+Please enter a name:
+Me
+Thank you for entering something!
+>>> 
+= RESTART: C:/Users/tcailleau/Documents/Python/AtBSwPython/Flow Control/if_non_null_proper_example.py
+Please enter a name:
+
+You did not even typer anything :-(
+>>> bool(0)
+False
+>>> boot(1)
+Traceback (most recent call last):
+  File "<pyshell#1>", line 1, in <module>
+    boot(1)
+NameError: name 'boot' is not defined
+>>> bool(1)
+True
+>>> bool(42)
+True
+>>> bool(0.0)
+False
+>>> 
+
+while_example.py
+spam = 0
+
+while spam < 5:
+    print("Hello Worlds" + str(spam) + "!")
+    spam = spam + 1
+
+= RESTART: C:/Users/tcailleau/Documents/Python/AtBSwPython/Flow Control/while_example.py
+Hello Worlds0!
+Hello Worlds1!
+Hello Worlds2!
+Hello Worlds3!
+Hello Worlds4!
+>>> 
+
+
+
+
+
+
+
+
+
+while_if_break_example.py
+name = ''
+while True:
+    print('Please type your name:')
+    name = input()
+    if name == 'your name':
+        break
+
+
+>>> 
+= RESTART: C:/Users/tcailleau/Documents/Python/AtBSwPython/Flow Control/while_if_break_example.py
+Please type your name:
+Thierry
+Please type your name:
+your name
+Thank you!
+>>> 
+
+
+
+
+
+
+
+whil_if_continue_example.py
+
+spam = 0
+while spam < 5:
+    spam = spam + 1
+    if spam == 3:
+        continue
+    print('spam is ' + str(spam))
+
+
+= RESTART: C:/Users/tcailleau/Documents/Python/AtBSwPython/Flow Control/whil_if_continue_example.py
+spam is 1
+spam is 2
+spam is 4
+spam is 5
+>>> 
+
+foor_loop_example.py
+
+print('My name is:')
+for i in range(5):
+    print('Jimmy 5 times ' + str(i))
+
+
+= RESTART: C:/Users/tcailleau/Documents/Python/AtBSwPython/Flow Control/foor_loop_example.py
+My name is:
+Jimmy 5 times 0
+Jimmy 5 times 1
+Jimmy 5 times 2
+Jimmy 5 times 3
+Jimmy 5 times 4
+>>> 
+
+
+
+
+
+
+
+foor_loop_example.py
+
+print('My name is:')
+for i in range(5):
+    print('Jimmy 5 times ' + str(i))
+print('---------------------------')
+for i in range(0 , 10):
+    print('Jimmy 5 times ' + str(i))
+print('---------------------------')
+for i in range(12 , 25):
+    print('Jimmy 5 times ' + str(i))
+print('---------------------------')
+for i in range(12 , 25, 2):
+    print('Jimmy 5 times ' + str(i))
+print('---------------------------')
+for i in range(5 , -1, -1):
+    print('Jimmy 5 times ' + str(i))
+print('---------------------------')
+
+
+= RESTART: C:/Users/tcailleau/Documents/Python/AtBSwPython/Flow Control/foor_loop_example.py
+My name is:
+Jimmy 5 times 0
+Jimmy 5 times 1
+Jimmy 5 times 2
+Jimmy 5 times 3
+Jimmy 5 times 4
+---------------------------
+Jimmy 5 times 0
+Jimmy 5 times 1
+Jimmy 5 times 2
+Jimmy 5 times 3
+Jimmy 5 times 4
+Jimmy 5 times 5
+Jimmy 5 times 6
+Jimmy 5 times 7
+Jimmy 5 times 8
+Jimmy 5 times 9
+---------------------------
+Jimmy 5 times 12
+Jimmy 5 times 13
+Jimmy 5 times 14
+Jimmy 5 times 15
+Jimmy 5 times 16
+Jimmy 5 times 17
+Jimmy 5 times 18
+Jimmy 5 times 19
+Jimmy 5 times 20
+Jimmy 5 times 21
+Jimmy 5 times 22
+Jimmy 5 times 23
+Jimmy 5 times 24
+---------------------------
+Jimmy 5 times 12
+Jimmy 5 times 14
+Jimmy 5 times 16
+Jimmy 5 times 18
+Jimmy 5 times 20
+Jimmy 5 times 22
+Jimmy 5 times 24
+---------------------------
+Jimmy 5 times 5
+Jimmy 5 times 4
+Jimmy 5 times 3
+Jimmy 5 times 2
+Jimmy 5 times 1
+Jimmy 5 times 0
+---------------------------
+>>> 
+

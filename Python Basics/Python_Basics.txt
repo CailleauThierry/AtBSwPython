@@ -1,3 +1,36 @@
+03_03_2021
+------------------------------------------
+= RESTART: C:/Users/tcailleau/Documents/Python/AtBSwPython/Python Basics/HelloWorld.py
+Hello World!
+What is you name?: 
+Thierry
+Nice meeting you, Thierry
+The length of you name is: 
+7
+characters.
+And what's your age?: 
+44
+You will be 45
+Traceback (most recent call last):
+  File "C:/Users/tcailleau/Documents/Python/AtBSwPython/Python Basics/HelloWorld.py", line 12, in <module>
+    print('You will be ' + str(int(yourAge) + 1)) + " in a year from now!"
+TypeError: unsupported operand type(s) for +: 'NoneType' and 'str'
+>>> 
+
+>>> str(26)
+'26'
+>>> int('1234')
+1234
+>>> float('3.14')
+3.14
+>>> float('3')
+3.0
+>>>
+
+input() always returns a string
+
+03_02_2021
+------------------------------------------
 Python 3.9.1 (tags/v3.9.1:1e5d33e, Dec  7 2020, 17:08:21) [MSC v.1927 64 bit (AMD64)] on win32
 Type "help", "copyright", "credits" or "license()" for more information.
 >>> print('Hello world!')
@@ -38,18 +71,37 @@ SyntaxError: invalid syntax
 'Alice !!!!!!!!!!!'
 >>> spam = 42
 >>> spam
-42
->>> spam + " World"
-Traceback (most recent call last):
-  File "<pyshell#20>", line 1, in <module>
-    spam + " World"
-TypeError: unsupported operand type(s) for +: 'int' and 'str'
->>> spam + ' World'
-Traceback (most recent call last):
-  File "<pyshell#21>", line 1, in <module>
-    spam + ' World'
-TypeError: unsupported operand type(s) for +: 'int' and 'str'
->>> spam = 'Hello'
->>> spam + " World"
-'Hello World'
+
+
+>>> spam
+4
+>>> spam = spam +1
+>>> spam
+5
+>>>
+Python 3.9.1 (tags/v3.9.1:1e5d33e, Dec  7 2020, 17:08:21) [MSC v.1927 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+>>> 
+[DEBUG ON]
+>>> 
+[DEBUG OFF]
+>>> 
+================================ RESTART: Shell ================================
+>>>  spam = 'Goodbye '
+ 
+SyntaxError: unexpected indent
+>>> spam = 'Goodbye '
+>>> spam = 2  +2
+>>> spam
+4
+>>> spam = spam +1
+>>> spam
+5
+>>> 
+Python 3.9.1 (tags/v3.9.1:1e5d33e, Dec  7 2020, 17:08:21) [MSC v.1927 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+>>> 
+[DEBUG ON]
+>>> 
+[DEBUG OFF]
 >>> 
