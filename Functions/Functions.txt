@@ -1,0 +1,46 @@
+PS C:\Users\tcailleau\Documents\WindowsPowerShell\Scripts> python
+Python 3.9.1 (tags/v3.9.1:1e5d33e, Dec  7 2020, 17:08:21) [MSC v.1927 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import random
+>>> random.ranint(1,10) 
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: module 'random' has no attribute 'ranint'
+>>> random.ranint(1,10) 
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: module 'random' has no attribute 'ranint'
+>>> random.randint(1,10)  
+9   
+03_20_2021
+------------------------------------------
+
+>>> random.randint(1,10)
+5   
+
+>>> import random, sys, os, math
+>>> from random import 8
+  File "<stdin>", line 1   
+    from random import 8   
+                       ^   
+SyntaxError: invalid syntax
+>>> from random import * 
+>>> randint(1,10) 
+4   
+
+>>> sys.exit()
+PS C:\Users\tcailleau\Documents\WindowsPowerShell\Scripts> 
+
+
+sys.exit.py
+------------
+import sys
+print('Hello')
+sys.exit()
+#the code will exit before we can get to Goobye
+print('Goodbye')
+
+PS C:\Users\tcailleau\Documents\WindowsPowerShell\Scripts> & C:/Users/tcailleau/AppData/Local/Programs/Python/Python39/python.exe c:/Users/tcailleau/Documents/Python/AtBSwPython/Functions/sys.exit.py
+Hello
+
+
