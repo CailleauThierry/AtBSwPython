@@ -1,3 +1,165 @@
+04_02_2021
+------------------------------------------
+Divide_by_exception.py
+def div42by(divideBy):
+    return 42 / divideBy
+
+print(div42by(2))
+print(div42by(12))
+print(div42by(0))
+
+PS C:\Users\tcailleau\AppData\Local\Programs\Python\Python39\Scripts> & C:/Users/tcailleau/AppData/Local/Programs/Python/Python39/python.exe c:/Users/tcailleau/Documents/Python/AtBSwPython/Functions/Divide_by_exception.py
+21.0
+3.5
+Traceback (most recent call last):
+  File "c:\Users\tcailleau\Documents\Python\AtBSwPython\Functions\Divide_by_exception.py", line 6, in <module>
+    print(div42by(0))
+  File "c:\Users\tcailleau\Documents\Python\AtBSwPython\Functions\Divide_by_exception.py", line 2, in div42by 
+    return 42 / divideBy
+ZeroDivisionError: division by zero
+PS C:\Users\tcailleau\AppData\Local\Programs\Python\Python39\Scripts> 
+
+04_01_2021
+------------------------------------------
+Transcript started, output file is C:\Users\tcailleau\Documents\WindowsPowerShell\PSTranscript\PSTranscript4_1_2021.txt
+Date: 4/1/2021
+Time: 9:31 PM
+Loading personal and system profiles took 1021ms.
+PS C:\Users\tcailleau\Documents\WindowsPowerShell\Scripts> & C:/Users/tcailleau/AppData/Local/Programs/Python/Python39/python.exe c:/Users/tcailleau/Documents/Python/AtBSwPython/Functions/sys.exit.py
+Hello
+PS C:\Users\tcailleau\Documents\WindowsPowerShell\Scripts> python.exe
+Python 3.9.1 (tags/v3.9.1:1e5d33e, Dec  7 2020, 17:08:21) [MSC v.1927 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import pyperclip
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ModuleNotFoundError: No module named 'pyperclip'
+>>> pii install pyperclip
+  File "<stdin>", line 1
+    pii install pyperclip
+        ^
+SyntaxError: invalid syntax
+>>> pip install pyperclip
+  File "<stdin>", line 1
+    pip install pyperclip
+        ^
+SyntaxError: invalid syntax
+>>> cd C:/Users/tcailleau/AppData/Local/Programs/Python/Python39/
+       ^
+SyntaxError: invalid syntax
+>>> exit()
+PS C:\Users\tcailleau\Documents\WindowsPowerShell\Scripts> cd C:/Users/tcailleau/AppData/Local/Programs/Python/Python39/
+PS C:\Users\tcailleau\AppData\Local\Programs\Python\Python39> ls
+
+
+    Directory: C:\Users\tcailleau\AppData\Local\Programs\Python\Python39
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         1/26/2021  11:17 AM                DLLs
+d-----         1/26/2021  11:17 AM                Doc
+d-----         1/26/2021  11:16 AM                include
+d-----         1/26/2021  11:17 AM                Lib
+d-----         1/26/2021  11:17 AM                libs
+d-----         1/26/2021  11:32 AM                Scripts
+d-----         1/26/2021  11:17 AM                tcl
+d-----         1/26/2021  11:17 AM                Tools
+-a----         12/7/2020   6:12 PM          32622 LICENSE.txt
+-a----         12/7/2020   6:13 PM        1036976 NEWS.txt
+-a----         12/7/2020   6:12 PM         101432 python.exe
+-a----         12/7/2020   6:12 PM          59448 python3.dll
+-a----         12/7/2020   6:12 PM        4451896 python39.dll
+-a----         12/7/2020   6:12 PM          99896 pythonw.exe
+-a----         12/7/2020   6:12 PM          94088 vcruntime140.dll
+-a----         12/7/2020   6:12 PM          36744 vcruntime140_1.dll
+
+
+PS C:\Users\tcailleau\AppData\Local\Programs\Python\Python39> cd .\Scripts\
+PS C:\Users\tcailleau\AppData\Local\Programs\Python\Python39\Scripts> ls
+
+
+    Directory: C:\Users\tcailleau\AppData\Local\Programs\Python\Python39\Scripts
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         1/26/2021  11:17 AM         106388 easy_install-3.9.exe
+-a----         1/26/2021  11:17 AM         106388 easy_install.exe
+-a----         1/26/2021  11:32 AM         106379 pip.exe
+-a----         1/26/2021  11:32 AM         106379 pip3.9.exe
+-a----         1/26/2021  11:32 AM         106379 pip3.exe
+PS C:\Users\tcailleau\AppData\Local\Programs\Python\Python39\Scripts> pip install pyperclip
+Collecting pyperclip
+  Downloading pyperclip-1.8.2.tar.gz (20 kB)
+Using legacy 'setup.py install' for pyperclip, since package 'wheel' is not installed.
+Installing collected packages: pyperclip
+    Running setup.py install for pyperclip ... done
+Successfully installed pyperclip-1.8.2
+WARNING: You are using pip version 21.0; however, version 21.0.1 is available.
+You should consider upgrading via the 'c:\users\tcailleau\appdata\local\programs\python\python39\python.exe -m pip install --upgrade pip' command.
+PS C:\Users\tcailleau\AppData\Local\Programs\Python\Python39\Scripts> c:\users\tcailleau\appdata\local\programs\python\python39\python.exe -m pip install --upgrade pip
+Requirement already satisfied: pip in c:\users\tcailleau\appdata\local\programs\python\python39\lib\site-packages (21.0)
+Collecting pip
+  Downloading pip-21.0.1-py3-none-any.whl (1.5 MB)
+     |████████████████████████████████| 1.5 MB 6.4 MB/s
+Installing collected packages: pip
+  Attempting uninstall: pip
+    Found existing installation: pip 21.0
+    Uninstalling pip-21.0:
+      Successfully uninstalled pip-21.0
+Successfully installed pip-21.0.1
+PS C:\Users\tcailleau\AppData\Local\Programs\Python\Python39\Scripts> 
+
+PS C:\Users\tcailleau\AppData\Local\Programs\Python\Python39\Scripts> python
+Python 3.9.1 (tags/v3.9.1:1e5d33e, Dec  7 2020, 17:08:21) [MSC v.1927 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import pyperclip
+>>> pyperclip.copy('Hello World!')
+>>> pyperclip.paste()
+'Hello World!'
+
+It really gets the clipboard from Windows Clipboard!
+
+MyFunction.py  
+def hello():
+    print('Howdy!')
+    print('Howdy!!!')
+    print('Oh, hello there!!')
+hello()
+hello()
+hello()
+
+PS C:\Users\tcailleau\AppData\Local\Programs\Python\Python39\Scripts> & C:/Users/tcailleau/AppData/Local/Programs/Python/Python39/python.exe c:/Users/tcailleau/Documents/Python/AtBSwPython/Functions/MyFunction.py     
+Howdy!
+Howdy!!!
+Oh, hello there!!
+Howdy!
+Howdy!!!
+Oh, hello there!!
+Howdy!
+Howdy!!!
+Oh, hello there!!
+PS C:\Users\tcailleau\AppData\Local\Programs\Python\Python39\Scripts> 
+
+MyFunction1.py 
+
+def hello(name):
+    print('Hello ' + name)
+hello('Alice')
+hello('Bob')
+
+
+PS C:\Users\tcailleau\AppData\Local\Programs\Python\Python39\Scripts> & C:/Users/tcailleau/AppData/Local/Programs/Python/Python39/python.exe c:/Users/tcailleau/Documents/Python/AtBSwPython/Functions/MyFunction1.py    
+Hello Alice
+Hello Bob
+
+>>> 'Hello has ' +  str(len('Hello')) + ' letters in it'
+'Hello has 5 letters in it'
+>>> 
+
+03_20_2021
+------------------------------------------
 PS C:\Users\tcailleau\Documents\WindowsPowerShell\Scripts> python
 Python 3.9.1 (tags/v3.9.1:1e5d33e, Dec  7 2020, 17:08:21) [MSC v.1927 64 bit (AMD64)] on win32
 Type "help", "copyright", "credits" or "license" for more information.
@@ -12,8 +174,6 @@ Traceback (most recent call last):
 AttributeError: module 'random' has no attribute 'ranint'
 >>> random.randint(1,10)  
 9   
-03_20_2021
-------------------------------------------
 
 >>> random.randint(1,10)
 5   
