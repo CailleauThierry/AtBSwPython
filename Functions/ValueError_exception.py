@@ -1,0 +1,1 @@
+print('How many cats do you have?')
