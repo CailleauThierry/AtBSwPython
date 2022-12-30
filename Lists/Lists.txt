@@ -1,0 +1,306 @@
+12_29_2022
+----------
+Type "help", "copyright", "credits" or "license" for more information.
+>>> ['cat','bat','rat','elephant']
+['cat', 'bat', 'rat', 'elephant']
+>>> spam = ['cat', 'bat', 'rat', 'elephant']
+>>> spam[0]
+'cat'
+>>> spam[1]
+'bat'
+
+
+>>> spams = [['cat', 'bat'],[10,20,30,470]]
+>>> smaps[0]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'smaps' is not defined
+>>> spams[0]
+['cat', 'bat']
+>>> spams[0][1]
+'bat'
+>>> spams[1][2]
+30
+
+>>> spams[-1]
+[10, 20, 30, 470]
+>>> spam[-1]
+'elephant'
+>>> spam[1:3]
+['bat', 'rat']
+>>>
+
+
+>>> spam = [10,20,30]
+>>> spam
+[10, 20, 30]
+>>> spam[1]='Hello'
+>>> spam
+[10, 'Hello', 30]
+>>>
+
+
+>>> spam[1:3]=['CAT','DOG','MOUSE']
+>>> spam
+[10, 'CAT', 'DOG', 'MOUSE']
+>>>
+>>> spam[:2]
+[10, 'CAT']
+>>> spam[1:]
+['CAT', 'DOG', 'MOUSE']
+>>> del spam[2]
+>>> spam
+[10, 'CAT', 'MOUSE']
+>>> del spam[2]
+>>> spam
+[10, 'CAT']
+>>>
+
+
+>>> len('Hello')
+5
+>>> len([1,2,3])
+3
+>>> 'Hello' + ' World'
+'Hello World'
+>>> [1,2,3] + [4,5,6]
+[1, 2, 3, 4, 5, 6]
+>>> 'Hello' * 3
+'HelloHelloHello'
+>>> [1,2,3] * 3
+[1, 2, 3, 1, 2, 3, 1, 2, 3]
+>>> int('42')
+42
+>>> str(42)
+'42'
+>>> list('Hello')
+['H', 'e', 'l', 'l', 'o']
+>>> spam = list('Hello')
+>>> spam[2]
+'l'
+>>> spam[1]
+'e'
+>>> 'howdy' in ['hello','hi','howdy','hey']
+True
+>>> 'howdy' not in ['hello','hi','howdy','hey']
+False
+>>>
+
+---------------------------
+
+PS C:\Users\tcailleau\Documents\Python\AtBSwPython> conda activate C:\tools\Anaconda3
+PS C:\Users\tcailleau\Documents\Python\AtBSwPython> python
+Python 3.8.5 (default, Sep  3 2020, 21:29:08) [MSC v.1916 64 bit (AMD64)] :: Anaconda, Inc. on win32
+
+Warning:
+This Python interpreter is in a conda environment, but the environment has
+not been activated.  Libraries may fail to load.  To activate this environment
+please see https://conda.io/activation
+
+Type "help", "copyright", "credits" or "license" for more information.
+>>> for i in [0,1,2,3]:
+... print(i)
+  File "<stdin>", line 2
+    print(i)
+    ^
+IndentationError: expected an indented block
+>>> for i in [0,1,2,3]:
+...   print(i)
+...
+0
+1
+2
+3
+>>> for i in range(4):
+...   print(i)
+...
+0
+1
+2
+3
+>>> range(4)
+range(0, 4)
+>>> list(range(4))
+[0, 1, 2, 3]
+>>> list(range(0,100,2))
+[0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44, 46, 48, 50, 52, 54, 56, 58, 60, 62, 64, 66, 68, 70, 72, 74, 76, 78, 80, 82, 84, 86, 88, 90, 92, 94, 96, 98]
+>>> supplies = ['pens','staples','batteries','binders']
+>>> for i in range(len(supplies)):
+...   print('Index' + str(i) + ' in supplies is: ' + supplies[i])
+...
+Index0 in supplies is: pens
+Index1 in supplies is: staples
+Index2 in supplies is: batteries
+Index3 in supplies is: binders
+>>>   print('Index ' + str(i) + ' in supplies is: ' + supplies[i])
+  File "<stdin>", line 1
+    print('Index ' + str(i) + ' in supplies is: ' + supplies[i])
+    ^
+IndentationError: unexpected indent
+>>> for i in range(len(supplies)):
+...   print('Index ' + str(i) + ' in supplies is: ' + supplies[i])
+...
+Index 0 in supplies is: pens
+Index 1 in supplies is: staples
+Index 2 in supplies is: batteries
+Index 3 in supplies is: binders
+>>> cat = ['fat','orange','loud']
+>>> size = cat[0]
+>>> color = cat[1]
+>>> disposition = cat[2]
+>>> size, color, disposition = cat
+>>> size
+'fat'
+>>> color
+'orange'
+>>> disposition
+'loud'
+>>> size, color, disposition = 'skinny','black','quiet'
+>>> size
+'skinny'
+>>> a = 'AAA'
+>>> b = 'BBB'
+>>> a,b = b,a
+>>> a
+'BBB'
+>>> b
+'AAA'
+>>> spam = 42
+>>> spam = spam + 1
+>>> spam += 1
+>>> spam
+44
+>>> spam++
+  File "<stdin>", line 1
+    spam++
+         ^
+SyntaxError: invalid syntax
+>>>
+
+
+-----------------
+
+PS C:\Users\tcailleau\Documents\Python\AtBSwPython> python
+Python 3.8.5 (default, Sep  3 2020, 21:29:08) [MSC v.1916 64 bit (AMD64)] :: Anaconda, Inc. on win32
+
+Warning:
+This Python interpreter is in a conda environment, but the environment has
+not been activated.  Libraries may fail to load.  To activate this environment
+please see https://conda.io/activation
+
+Type "help", "copyright", "credits" or "license" for more information.
+>>> spam = ['Hello', 'Howdy','Hi','Hey']
+>>> spam.index('Hello')
+0
+
+>>> spam.index('Hey')
+3
+>>> spam.index('Heyas')
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: 'Heyas' is not in list
+>>> spam.append('Hoi')
+>>> spam
+['Hello', 'Howdy', 'Hi', 'Hey', 'Hoi']
+>>> spam.in
+spam.index(  spam.insert(
+>>> spam.in
+KeyboardInterrupt
+>>> spam.insert(2,'Whatsup')
+>>> spam
+['Hello', 'Howdy', 'Whatsup', 'Hi', 'Hey', 'Hoi']
+>>> spam.remove('Hey')
+>>> spam
+['Hello', 'Howdy', 'Whatsup', 'Hi', 'Hoi']
+>>> del spam(1)
+  File "<stdin>", line 1
+SyntaxError: cannot delete function call
+>>> del spam[1]
+>>> spam
+['Hello', 'Whatsup', 'Hi', 'Hoi']
+>>> spam = ['cat','bat','cat','cat']
+>>> spam.re
+spam.remove(  spam.reverse(
+>>> spam.remove('cat')
+>>> spam
+['bat', 'cat', 'cat']
+>>> spam = [2,5,3.14,1,-7]
+>>> spam.sort()
+>>> spam
+[-7, 1, 2, 3.14, 5]
+>>> spam = ['ant','elephant','badger','horse']
+>>> spam
+['ant', 'elephant', 'badger', 'horse']
+>>> spam.sort()
+>>> spam
+['ant', 'badger', 'elephant', 'horse']
+>>> spam.re
+spam.remove(  spam.reverse(
+>>> spam.reverse()
+>>> spam
+['horse', 'elephant', 'badger', 'ant']
+>>>
+
+
+---------------
+
+>>> list('Hello')
+['H', 'e', 'l', 'l', 'o']
+>>> name = 'Sophie'
+>>> name[0]
+'S'
+>>> name [1:3]
+'op'
+>>> 'So' in mane
+Traceback (most recent call last):
+NameError: name 'mane' is not defined
+>>> 'So' in name
+True
+>>> "xxx" in name
+False
+>>> for letter in name:
+...   print(letter)
+...
+S
+o
+p
+h
+i
+e
+>>> name[7]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+IndexError: string index out of range
+>>> name[3]
+'h'
+>>> name[3] = 'x'
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'str' object does not support item assignment
+>>> name = 'Sophie a cat'
+>>> newName = name[0:7] + 'the' + name[8:12]
+>>> newName
+'Sophie the cat'
+>>>
+>>>
+>>> spam = [0,1,2,3,4,5]
+>>> chees = spam
+>>> chees[1]='Hello!'
+>>> chees
+[0, 'Hello!', 2, 3, 4, 5]
+>>> spam
+[0, 'Hello!', 2, 3, 4, 5]
+>>> 
+
+import copy
+
+spam = ['A','B','C','D']
+cheese = copy.deepcopy(spam)
+cheese.append('Hello')
+print(spam)
+print(cheese)
+
+PS C:\Users\tcailleau\Documents\Python\AtBSwPython> & C:/tools/Anaconda3/python.exe c:/Users/tcailleau/Documents/Python/AtBSwPython/Lists/copyModule.py
+['A', 'B', 'C', 'D']
+['A', 'B', 'C', 'D', 'Hello']
+PS C:\Users\tcailleau\Documents\Python\AtBSwPython> 

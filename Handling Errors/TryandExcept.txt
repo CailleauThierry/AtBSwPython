@@ -1,0 +1,78 @@
+12_29_2022
+---------------------------------------------
+def div42by(divideBy):
+    return 42 / divideBy
+print(div42by(2))
+print(div42by(12))
+print(div42by(0))
+print(div42by(1))
+
+PS C:\Users\tcailleau\Documents\Python\AtBSwPython> & C:/ProgramData/Anaconda3/python.exe "c:/Users/tcailleau/Documents/Python/AtBSwPython/Handling Errors/TryandExcept.py"
+21.0
+3.5
+Traceback (most recent call last):
+  File "c:/Users/tcailleau/Documents/Python/AtBSwPython/Handling Errors/TryandExcept.py", line 6, in <module>
+    print(div42by(0))
+  File "c:/Users/tcailleau/Documents/Python/AtBSwPython/Handling Errors/TryandExcept.py", line 2, in div42by 
+    return 42 / divideBy
+ZeroDivisionError: division by zero
+-----------------
+
+
+def div42by(divideBy):
+    try:
+        return 42 / divideBy
+    except ZeroDivisionError:
+        print('Error: You tried to divide by zero!')
+print(div42by(2))
+print(div42by(12))
+print(div42by(0))
+print(div42by(1))
+
+PS C:\Users\tcailleau\Documents\Python\AtBSwPython> & C:/ProgramData/Anaconda3/python.exe "c:/Users/tcailleau/Documents/Python/AtBSwPython/Handling Errors/TryandExcept.py"
+21.0
+3.5
+Error: You tried to divide by zero!
+None
+42.0
+PS C:\Users\tcailleau\Documents\Python\AtBSwPython> 
+--------------
+
+print('How many cats do you have?')
+numCats = input()
+if int(numCats) >= 4:
+    print('That is a lot of cats!5')
+else:
+    print('One never has enough cats!')
+
+PS C:\Users\tcailleau\Documents\Python\AtBSwPython> & C:/ProgramData/Anaconda3/python.exe "c:/Users/tcailleau/Documents/Python/AtBSwPython/Handling Errors/howManyCats.py"
+How many cats do you have?
+5
+That is a lot of cats!
+PS C:\Users\tcailleau\Documents\Python\AtBSwPython> & C:/ProgramData/Anaconda3/python.exe "c:/Users/tcailleau/Documents/Python/AtBSwPython/Handling Errors/howManyCats.py"
+How many cats do you have?
+3
+One never has enough cats!
+PS C:\Users\tcailleau\Documents\Python\AtBSwPython> & C:/ProgramData/Anaconda3/python.exe "c:/Users/tcailleau/Documents/Python/AtBSwPython/Handling Errors/howManyCats.py"
+How many cats do you have?
+six
+Traceback (most recent call last):
+  File "c:/Users/tcailleau/Documents/Python/AtBSwPython/Handling Errors/howManyCats.py", line 3, in <module>
+    if int(numCats) >= 4:
+ValueError: invalid literal for int() with base 10: 'six'
+PS C:\Users\tcailleau\Documents\Python\AtBSwPython> 
+-----------------
+print('How many cats do you have?')
+numCats = input()
+try:
+    if int(numCats) >= 4:
+        print('That is a lot of cats!5')
+    else:
+        print('One never has enough cats!')
+except ValueError:
+    print('You did not enter an Number!')
+
+PS C:\Users\tcailleau\Documents\Python\AtBSwPython> & C:/ProgramData/Anaconda3/python.exe "c:/Users/tcailleau/Documents/Python/AtBSwPython/Handling Errors/howManyCats.py"
+How many cats do you have?
+seven
+You did not enter an Number!

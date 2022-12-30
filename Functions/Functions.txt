@@ -1,3 +1,24 @@
+12_29_2022
+------------------------------------------
+PS C:\Users\tcailleau\Documents\Python\AtBSwPython> & C:/ProgramData/Anaconda3/python.exe c:/Users/tcailleau/Documents/Python/AtBSwPython/Functions/example.py
+Hello
+World
+Hello World    
+cat00dog00mouse
+PS C:\Users\tcailleau\Documents\Python\AtBSwPython> & C:/ProgramData/Anaconda3/python.exe --version
+Python 3.8.5
+PS C:\Users\tcailleau\Documents\Python\AtBSwPython> 
+
+12_28_2022
+------------------------------------------
+PS C:\Users\tcailleau\Documents\Python\AtBSwPython> & C:/tools/Anaconda3/python.exe c:/Users/tcailleau/Documents/Python/AtBSwPython/Functions/Divide_by_exception.py                                    
+21.0
+3.5
+Error: You tried to divide by zero.
+None
+42.0
+PS C:\Users\tcailleau\Documents\Python\AtBSwPython> 
+
 04_02_2021
 ------------------------------------------
 Divide_by_exception.py
