@@ -1,9 +1,0 @@
-12_29_2022
----------------------------
->>> myCat = {'size':'fat','color':'grey','disposition':'loud'}
->>> myCat
-{'size': 'fat', 'color': 'grey', 'disposition': 'loud'}
->>> myCat['size']
-'fat'
->>> 'My Cat has '+ myCat["color"] + ' fur'
-'My Cat has grey fur'

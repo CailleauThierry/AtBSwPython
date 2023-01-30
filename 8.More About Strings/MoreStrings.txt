@@ -1,0 +1,170 @@
+12_31_2022
+--------------------
+SyntaxError: invalid syntax
+>>> 'Hello'
+'Hello'
+>>> "That is Alice's cat"
+"That is Alice's cat"
+>>> 'Say hi to Bob\'s mother'
+"Say hi to Bob's mother"
+>>> print('Hello there\nHowareyou?\nI\'m fine')
+Hello there
+Howareyou?
+I'm fine
+>>> print('Hello there\nHow are you?\nI\'m fine')
+Hello there
+How are you?
+I'm fine
+>>> r'That is Carol\'s cat'
+"That is Carol\\'s cat"
+>>> print(r'That is Carol\'s cat')
+That is Carol\'s cat
+>>> print("""Dear Programmer
+... tripple quoting lets you break the one line rule a lot like the single escape character.
+... Good luck in learing Python!""")
+Dear Programmer
+tripple quoting lets you break the one line rule a lot like the single escape character.
+Good luck in learing Python!
+>>> spame = """Dear Programmer
+... tripple quoting lets you break the one line rule a lot like the single escape character.
+... Good luck in learing Python!"""
+>>> spame
+'Dear Programmer\ntripple quoting lets you break the one line rule a lot like the single escape character.\nGood luck in learing Python!'
+>>> 
+
+
+----------------
+
+
+Type "help", "copyright", "credits" or "license" for more information.
+>>> spam = 'Hello World!'
+>>> spam.upper()
+'HELLO WORLD!'
+>>> spam
+'Hello World!'
+>>> spam = spam.upper()
+>>> spam
+'HELLO WORLD!'
+>>> spam.lower()
+'hello world!'
+>>> answer = input()
+yes
+>>> answer
+'yes'
+>>> answer = input()
+YES
+>>> answer
+'YES'
+>>>
+>>> if answer == 'yes':
+...   print('Play again')
+...
+>>> answer == 'yes'
+False
+>>> answer.lowercase() == 'yes'
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'str' object has no attribute 'lowercase'
+>>> answer.lower() == 'yes'
+True
+>>> spam = 'Hello World!'
+>>> spam.islower()
+False
+>>> spam = spam.upper()
+>>> spam.islower()
+False
+>>> spam = spam.lower()
+>>> spam.islower()
+True
+>>> 'hello'.isalpha()
+True
+>>> 'hello123'.isalpha()
+False
+>>> 'hello123'.isalnum()
+True
+>>> 'Hello World!'[5].isspace()
+True
+>>> "Every Word Starts With An Uppercase Like A Tile".istitle()
+True
+>>> 'Hello World!'.startswith('H')
+True
+>>> 'Hello World!'.endswith('World!')
+True
+>>> 'Hello'.rjust(20,'*')
+'***************Hello'
+>>> 'Hello'.ljust(20,'-')
+'Hello---------------'
+>>> 'Hello'.cjust(20,'-')
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'str' object has no attribute 'cjust'
+>>> 'Hello'.center(20,'-')
+'-------Hello--------'
+>>> 'SpamSpamBaconSpamEggsSpamSpam'.replace('Spam','Nothing')
+'NothingNothingBaconNothingEggsNothingNothing'
+>>> 'SpamSpamBaconSpamEggsSpamSpam'.replace('Spam','')
+'BaconEggs'
+>>> exit()
+PS C:\Users\tcailleau\Documents\Python\AtBSwPython> pip.exe
+
+Usage:
+  pip <command> [options]
+
+Commands:
+  install                     Install packages.
+  download                    Download packages.
+  uninstall                   Uninstall packages.
+  freeze                      Output installed packages in requirements format.
+  list                        List installed packages.
+  show                        Show information about installed packages.
+  check                       Verify installed packages have compatible dependencies.
+  config                      Manage local and global configuration.
+  search                      Search PyPI for packages.
+  cache                       Inspect and manage pip's wheel cache.
+  wheel                       Build wheels from your requirements.
+  hash                        Compute hashes of package archives.
+  completion                  A helper command used for command completion.
+  debug                       Show information useful for debugging.
+  help                        Show help for commands.
+General Options:
+  -h, --help                  Show help.
+  --isolated                  Run pip in an isolated mode, ignoring environment variables and user configuration.
+  -v, --verbose               Give more output. Option is additive, and can be used up to 3 times.
+  -V, --version               Show version and exit.
+  -q, --quiet                 Give less output. Option is additive, and can be used up to 3 times (corresponding to WARNING, ERROR, and CRITICAL logging levels).
+  --log <path>                Path to a verbose appending log.
+  --no-input                  Disable prompting for input.
+  --proxy <proxy>             Specify a proxy in the form [user:passwd@]proxy.server:port.
+  --retries <retries>         Maximum number of retries each connection should attempt (default 5 times).
+  --timeout <sec>             Set the socket timeout (default 15 seconds).
+  --exists-action <action>    Default action when a path already exists: (s)witch, (i)gnore, (w)ipe, (b)ackup, (a)bort.
+  --trusted-host <hostname>   Mark this host or host:port pair as trusted, even though it does not have valid or any HTTPS.
+  --cert <path>               Path to alternate CA bundle.
+  --client-cert <path>        Path to SSL client certificate, a single file containing the private key and the certificate in PEM format.
+  --cache-dir <dir>           Store the cache data in <dir>.
+  --no-cache-dir              Disable the cache.
+  --disable-pip-version-check
+                              Don't periodically check PyPI to determine whether a new version of pip is available for download. Implied with --no-index.
+  --no-color                  Suppress colored output
+  --no-python-version-warning
+                              Silence deprecation warnings for upcoming unsupported Pythons.
+  --use-feature <feature>     Enable new functionality, that may be backward incompatible.
+  --use-deprecated <feature>  Enable deprecated functionality, that will be removed in the future.
+PS C:\Users\tcailleau\Documents\Python\AtBSwPython> pip install pyperclip
+Requirement already satisfied: pyperclip in c:\programdata\anaconda3\lib\site-packages (1.8.2)
+PS C:\Users\tcailleau\Documents\Python\AtBSwPython> 
+
+PS C:\Users\tcailleau\Documents\Python\AtBSwPython> C:/tools/Anaconda3/python.exe
+Python 3.8.5 (default, Sep  3 2020, 21:29:08) [MSC v.1916 64 bit (AMD64)] :: Anaconda, Inc. on win32
+
+Warning:
+This Python interpreter is in a conda environment, but the environment has
+not been activated.  Libraries may fail to load.  To activate this environment
+please see https://conda.io/activation
+
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import pyperclip
+>>> pyperclip.copy('Hello!!!!!!')
+>>> pyperclip.paste()
+">>> pyperclip.copy('Hello!!!!!!')\r\n>>>"
+

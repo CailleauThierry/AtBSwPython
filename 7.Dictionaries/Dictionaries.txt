@@ -1,0 +1,145 @@
+
+12_31_2022
+---------------------------
+>>> type(theBoard)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'theBoard' is not defined
+>>> theBoard = {'top-L': ' ', 'top-M': ' ', 'top-R': ' ',
+...             'mid-L': ' ', 'mid-M': ' ', 'mid-R': ' ',
+...             'low-L': ' ', 'low-M': ' ', 'low-R': ' '}
+>>> type(theBoard)
+<class 'dict'>
+>>> type(theBoard['top-R'])
+<class 'str'>
+>>>
+
+12_30_2022
+---------------------------
+Transcript started, output file is C:\Users\tcailleau\Documents\WindowsPowerShell\PSTranscript\PSTranscript12_30_2022.txt
+PS C:\Users\tcailleau\Documents\Python\AtBSwPython> conda activate C:\tools\Anaconda3
+['A', 'B', 'C', 'D', 'Hello']
+PS C:\Users\tcailleau\Documents\Python\AtBSwPython> & C:/tools/Anaconda3/python.exe c:/Users/tcailleau/Documents/Python/AtBSwPython/Lists/copyModule.py
+['A', 'B', 'C', 'D']
+PS C:\Users\tcailleau\Documents\Python\AtBSwPython> cd C:/tools/Anaconda3/
+PS C:\tools\Anaconda3> .\python.exe
+Python 3.8.5 (default, Sep  3 2020, 21:29:08) [MSC v.1916 64 bit (AMD64)] :: Anaconda, Inc. on win32
+
+Type "help", "copyright", "credits" or "license" for more information.
+
+>>> cat = {'name': 'Sophie','age':7,'color':gray}
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'gray' is not defined
+>>> cat = {'name': 'Sophie','age':7,'color':'gray'}
+>>> cat
+{'name': 'Sophie', 'age': 7, 'color': 'gray'}
+>>> allCats = []
+>>> allCats.append = [{'name': 'Sophie','age':7,'color':'gray'}]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'list' object attribute 'append' is read-only
+>>> allCats.append = ({'name': 'Sophie','age':7,'color':'gray'})
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'list' object attribute 'append' is read-only
+>>> allCats.append({'name': 'Sophie','age':7,'color':'gray'})
+>>> allCats.append({'name': 'Pooka','age':5,'color':'black'})
+>>> allCats.append({'name': 'Fat-tail','age':5,'color':'grey'})
+>>> allCats.append({'name': 'Street cat','age':-1,'color':'orange'})
+>>> allCats
+[{'name': 'Sophie', 'age': 7, 'color': 'gray'}, {'name': 'Pooka', 'age': 5, 'color': 'black'}, {'name': 'Fat-tail', 'age': 5, 'color': 'grey'}, {'name': 'Street cat', 'age': -1, 'color': 'orange'}]
+>>>
+
+Type "help", "copyright", "credits" or "license" for more information.
+>>> theBoard = {'top-L': ' ', 'top-M': ' ', 'top-R': ' ',
+...             'mid-L': ' ', 'mid-M': ' ', 'mid-R': ' ',
+...             'low-L': ' ', 'low-M': ' ', 'low-R': ' '}
+>>> theBoard
+{'top-L': ' ', 'top-M': ' ', 'top-R': ' ', 'mid-L': ' ', 'mid-M': ' ', 'mid-R': ' ', 'low-L': ' ', 'low-M': ' ', 'low-R': ' '}
+>>> import pprint
+>>> pprint.pp
+pprint.pp(     pprint.pprint(
+>>> pprint.pprint(theBoard)
+{'low-L': ' ',
+ 'low-M': ' ',
+ 'low-R': ' ',
+ 'mid-L': ' ',
+ 'mid-M': ' ',
+ 'mid-R': ' ',
+ 'top-L': ' ',
+ 'top-M': ' ',
+ 'top-R': ' '}
+>>>
+------------------------
+>>> theBoard = {'top-L': ' ', 'top-M': ' ', 'top-R': ' ',
+...             'mid-L': ' ', 'mid-M': ' ', 'mid-R': ' ',
+...             'low-L': ' ', 'low-M': ' ', 'low-R': ' '}
+>>> theBoard
+>>> import pprint
+>>> pprint.pp
+pprint.pp(     pprint.pprint(
+>>> pprint.pprint(theBoard)
+ 'low-M': ' ',
+ 'low-R': ' ',
+ 'mid-L': ' ',
+ 'mid-M': ' ',
+  File "<stdin>", line 2
+    print('|'+board['top-L']+'|'+board['top-M']+'|'board['top-R']+'|')
+                                                   ^
+    ^
+IndentationError: unexpected indent
+>>>   sprint('|' + board['top-L'] + '|' + board['top-M'] + '|' + board['top-R'] + '|')
+  File "<stdin>", line 1
+    sprint('|' + board['top-L'] + '|' + board['top-M'] + '|' + board['top-R'] + '|')
+    ^
+...   print('|' + board['top-L'] + '|' + board['top-M'] + '|' + board['top-R'] + '|')
+...   print('|' + board['mid-L'] + '|' + board['mid-M'] + '|' + board['mid-R'] + '|')
+...   print('-----------------------')
+...   print('|' + board['low-L'] + '|' + board['low-M'] + '|' + board['low-R'] + '|')
+...   print('-----------------------')
+>>> printBoard(theBoard)
+| | | |
+-----------------------
+| | | |
+-----------------------
+| | | |
+-----------------------
+...   print('-------')
+...   print('|' + board['top-L'] + '|' + board['top-M'] + '|' + board['top-R'] + '|')
+...   print('-------')
+...   print('|' + board['mid-L'] + '|' + board['mid-M'] + '|' + board['mid-R'] + '|')
+...   print('-------')
+...   print('|' + board['low-L'] + '|' + board['low-M'] + '|' + board['low-R'] + '|')
+...   print('-------')
+...
+>>> def printBoard(board):
+...
+KeyboardInterrupt
+>>>  printBoard(theBoard)
+  File "<stdin>", line 1
+    printBoard(theBoard)
+    ^
+IndentationError: unexpected indent
+>>> printBoard(theBoard)
+-------
+| | | |
+-------
+| | | |
+-------
+| | | |
+-------
+>>>
+
+
+12_29_2022
+---------------------------
+>>> myCat = {'size':'fat','color':'grey','disposition':'loud'}
+>>> myCat
+{'size': 'fat', 'color': 'grey', 'disposition': 'loud'}
+>>> myCat['size']
+'fat'
+>>> 'My Cat has '+ myCat["color"] + ' fur'
+'My Cat has grey fur'
+
+
